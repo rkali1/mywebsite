@@ -1,75 +1,81 @@
 <!DOCTYPE HTML>
-
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-}
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
-</style>
-</head>
-<body>
-
-		
-<video autoplay  loop id="myVideo">
-  <source src="images/waterfall.mp4" type="video/mp4">
-   <source src="images/waterfall.ogg" type="video/ogg">
-
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
+   <head>
+      <title>Gallery</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+   </head>
+   <body>
+      <!-- Wrapper -->
+      <div id="wrapper">
+         <!-- Header -->
+         <header id="header">
+            <span class="avatar"><img src="images/me8.jpg" alt="" /></span> 
+            <ul class="icons" style="color:#ff8000">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="portraits.html">Portraits</a></li>
+               <li><a href="personal.html">Personal</a></li>
+            </ul>
+            <h1>
+            Look into my <strong style="color:	#ff8000">Portfolio</strong>. 
+            <br>
+            <h1>It is where I express my <strong style="color: #ff8000">feelings</strong> and <strong style="color:	#ff8000">emotions</strong>.</h1>
+         </header>
+         <!-- Main -->
+         <section id="main">
+            <!-- Thumbnails -->
+            <section class="thumbnails">
+               <div>
+                
+                  
+               </div>
+               <div>
+                  <a href="images/fulls/me1.jpg">
+                     <img src="images/thumbs/me1.jpg" alt="" />
+                     <h3>"Keep the chin up, son"</h3>
+                  </a>
+				  
+                  <a href="images/fulls/umar.jpg">
+                     <img src="images/thumbs/umar.jpg" alt="" />
+                     <h3><b>BROTHER</b> from another mother</h3>
+                  </a>
+                  <a href="images/fulls/sami.jpg">
+                     <img src="images/thumbs/sami.jpg" alt="" />
+                     <h3>The wanna be "TURK"</h3>
+                  </a>
+				  <a href="images/fulls/dawood.jpg">
+                     <img src="images/thumbs/dawood.jpg" alt="" />
+                     <h3>Hola, yo soy "Jordi El Niño Poya"</h3>
+                  </a>
+				  <a href="images/fulls/khayam.jpg">
+                     <img src="images/thumbs/khayam.jpg" alt="" />
+                     <h3>The ChainSmoker</h3>
+                  </a>
+               </div>
+               <div>
+                  
+                  </a>
+               </div>
+            </section>
+         </section>
+         <!-- Footer -->
+         <footer id="footer">
+            <ul class="icons" style="color:	#ff8000">
+               <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+               <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+               <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+               <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+               <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+            <p>&copy; Untitled. All rights reserved. Design: Raja Ali.</p>
+         </footer>
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
